@@ -1,9 +1,9 @@
-DRD Watch Store
+### DRD Watch Store
 
 DRD Watch Store is a responsive full-stack e-commerce website for watches.  
 It allows users to browse products by category and includes a basic admin panel for managing products.
 
-Project Description
+### Project Description
 
 - E-commerce website for selling watches
 - Separate categories for Men, Women, and Smart Watches
@@ -11,34 +11,34 @@ Project Description
 - Backend developed using Node.js
 - Data stored using SQL database
 
-Technologies Used
+### Technologies Used
 
-Frontend
+## Frontend
 - HTML
 - CSS
 - JavaScript
 
-Backend
+## Backend
 - Node.js (Express)
 
-Database
+## Database
 - SQL (MySQL)
 
-Features
+### Features
 
-User Side
+## User Side
 - User login
 - View watches by category
 - Product listing with images
 - Add products to cart
 - Responsive UI
 
-Admin Side
+## Admin Side
 - Admin login 
 - Product management concept
 - Separate admin access from users
 
-## Folder Structure
+### Folder Structure
 
 ```
 DRD-Watch-Store/
@@ -95,29 +95,29 @@ DRD-Watch-Store/
 └── LICENSE
 ```
 
-How to Run the Project
+### How to Run the Project
 
 1. cd DRD-Watch-Store
 2. npm install
 3. node index.js
 4. http://localhost:3000
 
-Screenshots
+### Screenshots
 
-Login Page
+## Login Page
 ![Login Page](img/login.png)
 
-Home Page
+## Home Page
 ![Home Page](img/home.png)
 
-Product Listing
+## Product Listing
 ![Category Page](img/category.png)
 
-Shopping Cart
+## Shopping Cart
 ![Cart Page](img/add_cart.png)
 
-Admin Panel
+## Admin Panel
 ![Admin Panel](img/admin.png)
 
 
---- Thank you ---
+### --- Thank you ---
