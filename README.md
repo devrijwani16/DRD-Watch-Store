@@ -41,7 +41,6 @@ Admin Side
 Project Structure
 
 DRD-Watch-Store/
-│
 ├── index.js
 ├── package.json
 ├── package-lock.json
@@ -63,6 +62,7 @@ DRD-Watch-Store/
 │       │   └── story.png
 │       │
 │       ├── assets1/
+│       │
 │       └── images/
 │           ├── service-1.png
 │           ├── service-2.png
@@ -73,10 +73,10 @@ DRD-Watch-Store/
 │   ├── index.html
 │   ├── home_ad.html
 │   ├── about.html
-│   ├── contact us.html
+│   ├── contact-us.html
 │   ├── men.html
-│   ├── Women.html
-│   ├── Smart.html
+│   ├── women.html
+│   ├── smart.html
 │   ├── cart.html
 │   ├── login.html
 │   ├── register.html
