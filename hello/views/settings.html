@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background: #07506f;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #d9edf7;
+        }
+        .main-content {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 2.4em;
+            color: #343a40;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #6c757d;
+        }
+        .settings-container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: left;
+            width: 80%;
+        }
+        .settings-container h2 {
+            color: #343a40;
+        }
+        .settings-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .settings-container li {
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Admin Panel</h1>
+        <div>
+            <a href="home_ad.html">Home</a>
+            <a href="user.html">Users</a>
+            <a href="settings.html">Settings</a>
+            <a href="reports.html">Reports</a>
+            <a href="login.html">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Settings</h1>
+        <p>Update your preferences and system settings below.</p>
+    </div>
+    <div class="settings-container">
+        <h2>Configuration Options</h2>
+        <ul>
+            <li>Change Password</li>
+            <li>Update Profile Information</li>
+            <li>Manage Notifications</li>
+            <li>Privacy Settings</li>
+            <li>System Preferences</li>
+        </ul>
+    </div>
+</body>
+</html>

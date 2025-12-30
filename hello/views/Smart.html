@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Watch Collection</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        h1 {
+            text-align: center;
+            padding: 3rem;
+            color: #135D84;
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 1rem;
+            margin: 2rem;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background: #e8c314;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+        
+        #productGrid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .product {
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 1.5rem;
+            width: 340px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 6px;
+            margin-bottom: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .product:hover img {
+            transform: scale(1.05);
+        }
+        
+        .product h4 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin: 0.8rem 0;
+        }
+        
+        .product p {
+            text-align: center;
+            color: #135D84;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 1rem 0;
+        }
+        
+        .add-to-cart {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            background: #135D84;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        
+        .add-to-cart:hover {
+            background: #0f4a6b;
+            transform: translateY(-2px);
+        }
+        
+        .add-to-cart:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img
+                src="../public/images/assets/logo-dark.png"
+                alt="logo-dark"
+                class="logo-dark"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#product">Product</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+    <div class="container">
+        <h1>Smart Watch Collection</h1>
+        <div id="productGrid"></div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+           <div class="footer-row">
+               <div class="footer-column company-column">
+                   <h4>Company</h4>
+                   <ul>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Our Services</a></li>
+                       <li><a href="#">Privacy Policy</a></li>
+                       <li><a href="#">Affiliate Program</a></li>
+                   </ul>
+               </div>
+               <div class="footer-column help-column">
+                   <h4>Get Help</h4>
+                   <ul>
+                       <li><a href="#">FAQ</a></li>
+                       <li><a href="#">Shipping</a></li>
+                       <li><a href="#">Returns</a></li>
+                       <li><a href="#">Order Status</a></li>
+                       <li><a href="#">Payment Options</a></li>
+                   </ul>
+               </div>
+               <div class="footer-column shop-column">
+                   <h4>Online Shop</h4>
+                   <ul>
+                       <li><a href="#">Watch</a></li>
+                       <li><a href="#">Bag</a></li>
+                       <li><a href="#">Shoes</a></li>
+                       <li><a href="#">Dress</a></li>
+                   </ul>
+               </div>
+               <div class="footer-column social-column">
+                   <h4>Follow Us</h4>
+                   <div class="social-links">
+                       <a href="#"><img src="../public/images/img/facebook.png" alt="Facebook"></a>
+                       <a href="#"><img src="../public/images/img/twitter.png" alt="Twitter"></a>
+                       <a href="#"><img src="../public/images/img/google.png" alt="Google"></a>
+                       <a href="#"><img src="../public/images/img/link.png" alt="LinkedIn"></a>
+                   </div>
+               </div>
+           </div>
+        </div>
+     </footer>
+
+    <script>
+        const products = JSON.parse(localStorage.getItem('products')) || [];
+        const productGrid = document.getElementById('productGrid');
+
+        products.forEach(product => {
+            if (product.category === 'smart') {
+                productGrid.innerHTML += `
+                    <div class="product">
+                    <img src="../public/images/${product.image}" alt="${product.name}">
+                        <h4>${product.name}</h4>
+                        <p>₹${product.price.toLocaleString('en-IN')}</p>
+                        <button class="add-to-cart" onclick="addToCart('${product.name}', '${product.image}', ${product.price})">ADD TO CART</button>
+                    </div>
+                `;
+            }
+        });
+
+        function addToCart(name, image, price) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingItem = cart.find(item => item.name === name);
+
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({ name, image, price, quantity: 1 });
+            }
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Added to cart! Go to cart to view your items.');
+            window.location.href = 'cart.html'; // Redirect to cart page
+        }
+    </script>
+</body>
+</html>
