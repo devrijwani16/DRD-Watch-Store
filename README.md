@@ -110,8 +110,11 @@ DRD-Watch-Store/
 ### Home Page
 ![Home Page](img/home.png)
 
-### Product Listing
+### Product Category
 ![Category Page](img/category.png)
+
+### Product Collection 
+![Product Collection ](img/collection.png)
 
 ### Shopping Cart
 ![Cart Page](img/add_cart.png)
