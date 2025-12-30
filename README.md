@@ -38,7 +38,7 @@ Admin Side
 - Product management concept
 - Separate admin access from users
 
-Project Structure
+Folder Structure
 
 DRD-Watch-Store/
 ├── index.js
@@ -92,6 +92,8 @@ DRD-Watch-Store/
 ├── README.md
 ├── .gitignore
 └── LICENSE
+```
+
 
 How to Run the Project
 
