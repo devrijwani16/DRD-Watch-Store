@@ -113,8 +113,8 @@ DRD-Watch-Store/
 ### Product Category
 ![Category Page](img/category.png)
 
-### Product Collection 
-![Product Collection ](img/collection.png)
+### Men Collection 
+![Men Collection ](img/men's collection.png)
 
 ### Shopping Cart
 ![Cart Page](img/add_cart.png)
