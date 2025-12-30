@@ -92,8 +92,6 @@ DRD-Watch-Store/
 ├── README.md
 ├── .gitignore
 └── LICENSE
-```
-
 
 How to Run the Project
 
