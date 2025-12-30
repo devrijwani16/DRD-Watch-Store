@@ -120,4 +120,4 @@ DRD-Watch-Store/
 ![Admin Panel](img/admin.png)
 
 
-                                                                      ## --- Thank you ---
+                                                              ## --- Thank you ---
