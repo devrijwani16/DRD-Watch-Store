@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Footer Design</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+  <style>
+
+    
+* {
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+.product-sec {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 5%;
+}
+
+.product-sec h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+
+.product-sec p {
+    max-width: 650px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #878787;
+}
+
+.card-sec {
+    max-width: 1170px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card {
+    width: 30%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #F9F9F9;
+    padding: 40px 25px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    background: #f1f1f1;
+}
+
+.card img {
+    width: 4rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+    <!-- nav -->
+
+        <nav>
+          <div class="nav__header">
+            <div class="nav__logo">
+              <a href="#">
+                <img
+                  src="../public/images/assets/logo-dark.png"
+                  alt="logo-dark"
+                  class="logo-dark"
+                />
+              </a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#product">Product</a></li>
+            <li><a href="#store">about us</a></li>
+            <li><a href="contact us.html">Contact us</a></li>
+          </ul>
+        </nav>
+
+    <!-- about us -->
+
+    
+   <div class="product-sec">
+    <h1>
+      Why Choose Our Smart Watch ?
+    </h1>
+    <p>Our website offers the best selection of smartwatches, combining premium quality, cutting-edge features, and unbeatable prices.</p>
+
+    <div class="card-sec">
+        <div class="card">
+            <img src="../public/images/images/interactive-design.png" alt=""/>
+            <h2>Advance Interface</h2>
+            <p>the latest smartwatches with advanced technology and sleek designs. Enjoy seamless connectivity, real-time health tracking, and AI-powered insights.</p>
+        </div>
+
+        <div class="card">
+            <img src="../public/images/images/install-stopwatch.png" alt=""/>
+            <h2>Precision Stopwatch</h2>
+            <p> Easily track time for workouts, races, or daily tasks. The intuitive interface ensures quick start, stop, and lap functions. Experience precision timing at your fingertips!"</p>
+        </div>
+
+        <div class="card">
+            <img src="../public/images/images/gps-tracking.png" alt=""/>
+            <h2>Accurate GPS</h2>
+            <p>Our smartwatches feature built-in GPS for accurate location tracking. Perfect for navigation, workouts, and outdoor adventures. Stay connected without needing your phone."</p>
+        </div>
+    </div>
+
+   </div>
+
+
+    <!-- footer -->
+  <footer class="footer">
+     <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-column company-column">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                </ul>
+            </div>
+            <div class="footer-column help-column">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footer-column shop-column">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Bag</a></li>
+                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#">Dress</a></li>
+                </ul>
+            </div>
+            <div class="footer-column social-column">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><img src="../public/images/img/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../public/images/img/twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="../public/images/img/google.png" alt="Google"></a>
+                    <a href="#"><img src="../public/images/img/link.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+     </div>
+  </footer>
+
+</body>
+</html>

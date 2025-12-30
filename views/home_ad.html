@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background: #135D84;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .navbar h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #d9edf7;
+        }
+        .main-content {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .main-content h1 {
+            font-size: 2.4em;
+            color: #343a40;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #6c757d;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 80%; 
+            height: 400px; 
+        }
+        .crud-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 20px 40px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: #135D84;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .crud-button:hover {
+            background-color: #0f4867;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Admin Panel</h1>
+        <div>
+            <a href="home_ad.html">Home</a>
+            <a href="user.html">Users</a>
+            <a href="settings.html">Settings</a>
+            <a href="reports.html">Reports</a>
+            <a href="Login.html">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to the Admin Panel</h1>
+        <p>Navigate through the options above to explore the features of the admin panel.</p>
+    </div>
+    <div class="container">
+        <h2>New Container</h2>
+        <p>This is the newly added container. Customize as needed.</p>
+        <a href="admin.html" class="crud-button">History</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact - Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body {
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to bottom, black, darkblue);
+}
+
+.container {
+	width: 950px;
+	margin: 80px auto;
+	color: white;
+	line-height: 1.5;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content {
+	display: flex;
+	margin-top: 40px;
+}
+
+.icon {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 30px;
+	padding: 15px;
+	vertical-align: top;
+}
+
+.contact-info {
+	display: inline-block;
+	padding: 4px 20px 0px 20px;
+}
+
+.address-line {
+	margin-top: 40px;
+}
+
+.col-1 {
+	width: 530px;
+}
+
+.col-2 {
+	flex: 1 1 auto;
+	background-color: white;
+}
+
+.form-container {
+	color: #000;
+	padding: 30px;
+}
+
+.contact-info-title {
+	color: #00d9ff;
+}
+
+.form-row {
+	padding-bottom: 30px;
+}
+
+.form-field {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	height: 30px;
+}
+.form-row:nth-child(4) .form-field {
+    height: 80px;
+}
+
+.send-btn {
+	border: 0px;
+	padding: 12px 26px;
+	background-color: #01bdd4;
+	color: white;
+}
+.back-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.back-arrow img {
+    width: 24px;
+    height: 24px;
+}
+
+.back-arrow:hover {
+    background-color: darkblue;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="text-center">
+			<h1><b>Contact Us</b></h1>
+		</div>
+		<a href="index.html" class="back-arrow">
+			<img src="../public/images/image/arrow.png" alt="Back">
+		</a>		
+		<div class="content">
+			<div class="col-1">
+				<div class="address-line">
+					<img alt="location" src="../public/images/image/loction.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Address</div>
+						<div> Gujarat University,</div>
+						<div>Navrangpura, Ahemdabad ,</div>
+						<div>380009.</div>
+					</div>
+				</div>
+				<div class="address-line">
+					<img alt="location" src="../public/images/image/phone.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Phone</div>
+						<div>+91 123456789</div>
+					</div>
+				</div>
+				<div class="address-line">
+					<img alt="location" src="../public/images/image/email.png" class="icon">
+					<div class="contact-info">
+						<div class="contact-info-title">Email</div>
+						<div>DRD@gmail.com</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<form>
+					<div class="form-container">
+						<center><h2>Send Message</h2></center>
+						<div class="form-row">
+							<label>Full Name</label>
+							<div>
+								<input type="text" class="form-field">
+							</div>
+						</div>
+						<div class="form-row">
+							<label>Email</label>
+							<div>
+								<input type="text" class="form-field">
+							</div>
+						</div>
+						<div class="form-row">
+							<label>Type your message...</label>
+							<div>
+								<textarea class="form-field" rows="4"></textarea>
+							</div>
+						</div>
+						<input type="button" class="send-btn" value="Send">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
