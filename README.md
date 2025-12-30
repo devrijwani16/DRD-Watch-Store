@@ -102,21 +102,21 @@ How to Run the Project
 3. node index.js
 4. http://localhost:3000
 
-## Screenshots
+Screenshots
 
-### Home Page
-![Home Page](img/home.png)
-
-### Product Listing
-![Category Page](img/category.png)
-
-### Shopping Cart
-![Cart Page](img/add to cart.png)
-
-### Login Page
+Login Page
 ![Login Page](img/login.png)
 
-### Admin Panel
+Home Page
+![Home Page](img/home.png)
+
+Product Listing
+![Category Page](img/category.png)
+
+Shopping Cart
+![Cart Page](img/add_cart.png)
+
+Admin Panel
 ![Admin Panel](img/admin.png)
 
 
